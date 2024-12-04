@@ -1,0 +1,413 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Burger Menu */
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    height: 100vh;
+    background: url('./413847430_1902228393544467_4264023571630897430_n.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .overlay {
+    position: absolute;
+    display: flex;
+    margin: 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px 20px; /* Add padding to create space from top */
+    width: 120vh;
+    height: 100vh;
+    }
+
+    .white {
+        position: absolute;
+        display: flex;
+        background: rgb(212, 220, 220);
+        padding: 60px 20px; /* Add padding to create space from top */
+        width: 50%;
+        margin-left: -50%;
+        height: 100vh;
+    }
+
+
+  
+
+
+  #hero h1 {
+    position: relative;
+    font-size: 3em;
+    font-weight: bold;
+    z-index: 10;
+    background-image: linear-gradient(100deg, rgb(0, 0, 0),rgb(64, 64, 65), rgb(241, 241, 255));
+    color: transparent;
+    background-clip: text;
+  }
+  
+  #hero p {
+    position: relative;
+    box-shadow: #333;
+    font-size: 1.2em;
+    font-weight: 1;
+    background-image: linear-gradient(100deg, rgb(0, 0, 0),rgb(64, 64, 65), rgb(241, 241, 255));
+    color: transparent;
+    background-clip: text;
+  }
+
+  #hero button{
+    position: absolute;
+    display: flex;
+    margin-top: 50%;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(108, 109, 159);
+    border-style: none;
+    font-weight: bold;
+    box-shadow: 0 7px 3px rgba(0, 2, 0, 0.1);
+    color: white;
+    cursor: pointer;
+  }
+  
+  #hero button:hover{
+    transform:translate(1%,1%) scale(1.05);
+    background-color: rgb(126, 127, 175);
+    color: #e2d6d6;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 60px 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  ul {
+    list-style: disc inside;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  
+
+#about{
+    background: linear-gradient(  rgb(212, 220, 220), 12.91%, #d7d1d1 26.95%, #cdcdd4 42.93%);
+    color:  rgb(53, 49, 71);
+    height: 70vh;
+    padding-left: 20px;
+    display: flex;
+}
+
+#about h2{
+    max-width: 550px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(53, 49, 71);
+}
+
+#about img{
+    height: 400px;
+    float: right;
+    shape-outside: url(./280962732_1523540511413259_8596260442133311171_n.jpg);
+}
+
+#about p{
+    max-width: 620px;
+    text-align: center;
+}
+
+#about .description{
+    position: relative;
+    display: flex;
+    background-color: #c1c9ca;
+    height: 300px;
+    width: 60%;
+    border: #a89ebe;
+    border-radius: 5%;
+    border-width: 8px;
+    border-style: solid;
+    margin-left: 5%;
+    padding: 1%;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* General section styling */
+#skills {
+  background: url("backgroun.png") no-repeat;
+  background-size: 1000px;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+#skills h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* Skills container with side buttons */
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+}
+
+.skills-container img{
+  width: 70px;
+}
+
+/* Scrollable area */
+.skills-scrollable {
+  display: flex;
+  overflow-x: hidden; /* Hide overflowing content */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 10px;
+  padding-top: 10%;
+  height: 300px;
+  flex: 1; /* Makes this section grow to fill available space */
+  white-space: nowrap; /* Prevents items from wrapping */
+  flex-direction: row;
+}
+
+.skills-scrollable a{
+  text-decoration: none;
+  flex-direction: column;
+  display: flex;
+}
+
+/* Skill items */
+.myskills {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  flex: 0 0 auto;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 5 4px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Ensures each skill stays on a single line */
+}
+
+.myskills:hover {
+  background-color: #b2ebf2;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #004d40;
+}
+
+.scroll-btn:active {
+  transform: scale(0.9);
+}
+
+
+#projects{
+    background: linear-gradient(  rgb(212, 220, 220), 12.91%, #d7d1d1 26.95%, #cdcdd4 42.93%);
+}
+
+#contact{
+    background: linear-gradient(  rgb(212, 220, 220), 12.91%, #202046 26.95%, #202046 42.93%);
+}
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #333;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        height: 180vh;
+    }
+
+    #about img{
+        width: 100%;
+        max-width: fit-content;
+        margin: 10% 20%;
+    }
+
+    #about .description{
+        width: 450px;
+        margin-left: 5%;
+        padding: 10%;
+        height: 400px;
+    }
+
+        
+    /* General styling for the section */
+    #skills {
+      margin: 20px auto;
+      text-align: center;
+      max-width: 100%; /* Ensure the section spans across the available width */
+    }
+
+    #skills h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    /* Scrollable container */
+    .skills-scrollable {
+      display: flex;
+      overflow-x: auto; /* Enables horizontal scrolling */
+      scroll-behavior: smooth; /* Smooth scrolling effect */
+      gap: 10px;
+      padding: 10px;
+      white-space: nowrap; /* Prevents items from wrapping */
+    }
+
+    /* Hide scrollbars */
+    .skills-scrollable::-webkit-scrollbar {
+      display: none;
+    }
+
+    .skills-scrollable {
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    /* Individual skill items */
+    .myskills {
+      flex: 0 0 auto; /* Prevents items from stretching */
+      background-color: #e0f7fa;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .myskills img{
+      width: 50px;
+    }
+
+    .myskills:hover {
+      background-color: #b2ebf2; /* Highlight on hover */
+      transform: scale(1.05);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .myskills a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+    }
+
+  }
+  
